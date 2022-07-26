@@ -60,7 +60,7 @@ function App() {
       extractedFromArray += historyGuesses[historyGuesses.length - 1][f].key
     }
 
-    if (historyGuesses[historyGuesses.length - 1].length == 5) {
+    if (historyGuesses[historyGuesses.length - 1].length == 5 && wordList.includes(extractedFromArray)) {
       let sampleNewData = []
       let wordOfGameToArray = wordOfGame.split('')
 
